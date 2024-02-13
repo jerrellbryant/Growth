@@ -1,0 +1,254 @@
+
+/* imported styles */
+
+@import url("reset.css");
+@import url("ulility.css");
+
+/* Desktop Nav Section */
+
+.navbar {
+  background: #fff;
+  padding: 20px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+.navbar ul li:last-child a {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.navbar ul li:last-child i {
+  margin-right: 10px;
+}
+
+/* Hero Section */
+
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero .container {
+  background: url('../images/hero-bg.png') no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 550px;
+}
+
+.hero .hero-content {
+  width: 70%;
+}
+
+.hero .hero-text {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+/* Video Section */
+
+.video {
+  padding: 10px 0 40px;
+}
+
+.video .video-preview {
+  width: 100%;
+  background: #333;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.video .video-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Testimony Section */
+.testimonials {
+  padding: 40px 0;
+}
+
+.testimonials .testimonials-heading{
+  width: 700px;
+  margin-bottom: 40px;
+}
+
+.testimonials .testimonials-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.testimonials .card p:nth-child(2) {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+/* Pricing Section */
+
+.pricing .pricing-grid{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.pricing .pricing-card-subheading {
+  margin-bottom: 30px;
+}
+
+.pricing .pricing-card-price {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.pricing ul {
+  margin: 30px 0;
+}
+
+.pricing ul li {
+  margin-bottom: 20px;
+}
+
+.pricing ul li i {
+  margin-right: 10px;
+}
+
+.pricing .btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pricing .pricing-footer {
+  margin: 30px 0;
+}
+
+/* FAQ section */
+
+.faq {
+  padding: 40px 0;
+}
+
+.faq .faq-group {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.faq .faq-group-header {
+  border-radius: 10px;
+  padding: 20px 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.faq .faq-group-header h4 {
+  font-weight: 600;
+  width: 95%;
+}
+
+.faq i {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.faq .faq-group-body {
+  display: none; 
+}
+
+.faq .faq-group-body.open {
+  display: block;
+}
+
+.faq ul.faq-menu {
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #f4f4f6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.faq ul.faq-menu li {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.faq ul.faq-menu li.active {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* Footer Section */
+
+.footer {
+  padding: 40px 0;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul li {
+  line-height: 2.5;
+}
+
+.footer a {
+  color: #ccc;
+}
+
+.footer i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.footer .footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  justify-items: center;
+  align-items: start;
+}
+
+.footer .card {
+  margin: 20px 30px 30px 0;
+}
+
+.footer .card input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
+}
