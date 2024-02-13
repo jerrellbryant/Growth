@@ -55,6 +55,24 @@
     width: 100%;
 }
 
+/* Hamburger Button Styles */
+.hamburger-button {
+    display: none; /* Hides the button by defau on Desktop / larger screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;   
+}
+
+.hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
 /* Text Styles */
 .text-xxl {
     font-size: 3rem;
@@ -126,3 +144,28 @@
     color: #333;
 }
 
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: -300px; /* Initially it is hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: right 0.3s ease-in-out; /*Transition the right property */
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu ul li { 
+    margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+    font-size: 20px;
+    transition: 0.3s;
+}

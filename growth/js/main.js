@@ -1,3 +1,4 @@
+/* FAQ Section */
 document.addEventListener("DOMContentLoaded", () => {
   const faqContainer = document.querySelector(".faq-content")
 
@@ -29,5 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
         otherIcon.classList.add("fa-plus")
       }
     })
+  })
+})
+
+/* Hamburger Button / Mobile Menu */
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburgerButton = document.getElementById("hamburger-button")
+  const mobileMenu = document.querySelector(".mobile-menu")
+
+  hamburgerButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active")
   })
 })

@@ -3,6 +3,7 @@
 
 @import url("reset.css");
 @import url("ulility.css");
+@import url("mobile.css");
 
 /* Desktop Nav Section */
 
@@ -251,4 +252,89 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 20px 0;
+}
+
+
+@media (max-width: 960px) {
+  .text-xxl {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width:670px) {
+  .navbar .hamburger-button {
+    display: block;
+    /*Show the mobile menu on smaller screens */
+  }
+
+  .navbar .main-menu {
+    display: none;
+    /* Hide desktop menu on smaller screens */
+  }
+
+  /* Hero */
+  .hero .container {
+    background: url(../images/hero-bg-mobile.png) no-repeat;
+    background-size: 350px 400px;
+    background-position: bottom;
+    height: 700px;
+  }
+
+  .hero .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .hero-text {
+    width: 100%;
+  }
+
+  .video .container {
+    width: 100%;
+  }
+
+  .testimonials .testimonials-heading {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
+  .pricing .container {
+    width: 100%;
+  }
+
+  .testimonials .testimonials-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .card {
+    margin-right: 0;
+  }
+
+  .footer-grid>div {
+    text-align: center;
+  }
+
+  .text-xl {
+    font-size: 1.9rem;
+  }
+
+  .text-xl {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-xxl {
+    font-size: 2rem;
+  }
+
+  .hero .container {
+    min-height: 700px;
+  }
 }
